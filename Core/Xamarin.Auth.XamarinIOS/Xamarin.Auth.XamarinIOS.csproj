@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{15BE2387-8E72-4C0B-8A6A-460EF5FA4539}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Xamarin.AuthX</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Xamarin.AuthX</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;__UNIFIED__;__MOBILE__;__IOS__;$(XamarinAuthCustomPreprocessorConstantsDefines)</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <XamarinAuthCustomPreprocessorConstantsDefines></XamarinAuthCustomPreprocessorConstantsDefines>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;$(XamarinAuthCustomPreprocessorConstantsDefines)</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Xamarin.Auth.Common.LinkSource\AuthException.cs">
+      <Link>AuthException.cs</Link>
+    </Compile>
+    <Compile Include="..\Xamarin.Auth.Common.LinkSource\AccountStore\Account.cs">
+      <Link>AccountStore\Account.cs</Link>
+    </Compile>
+    <Compile Include="..\Xamarin.Auth.Common.LinkSource\AccountStore\AccountResult.cs">
+      <Link>AccountStore\AccountResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Xamarin.Auth.Common.LinkSource\AccountStore\AccountStore.cs">
+      <Link>AccountStore\AccountStore.cs</Link>
+    </Compile>
+    <Compile Include="..\Xamarin.Auth.Common.LinkSource\AccountStore\AccountStore.Async.cs">
+      <Link>AccountStore\AccountStore.Async.cs</Link>
+    </Compile>
+    <Compile Include="AccountStore\AccountStore.XamarinIOS.cs" />
+    <Compile Include="..\Xamarin.Auth.Common.LinkSource\AccountStore\AccountStoreException.cs">
+      <Link>AccountStore\AccountStoreException.cs</Link>
+    </Compile>
+    <Compile Include="AccountStore\ACAccountWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccountStore\KeyChainAccountStore.cs" />
+    <Compile Include="AccountStore\KeyChainAccountStore.Aync.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+    <!--
+  <Import Project="..\..\packages\Microsoft.DotNet.BuildTools.GenAPI.1.0.0-beta-00081\build\Microsoft.DotNet.BuildTools.GenAPI.targets" Condition="Exists('..\..\packages\Microsoft.DotNet.BuildTools.GenAPI.1.0.0-beta-00081\build\Microsoft.DotNet.BuildTools.GenAPI.targets')" />
+    -->
+</Project>

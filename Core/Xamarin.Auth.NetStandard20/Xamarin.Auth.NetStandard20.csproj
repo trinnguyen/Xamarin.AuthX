@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyName>Xamarin.AuthX</AssemblyName>
+        <RootNamespace>Xamarin.AuthX</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="..\Xamarin.Auth.Common.LinkSource\AccountStore\Account.cs">
+            <Link>AccountStore\Account.cs</Link>
+        </Compile>
+        <Compile Include="..\Xamarin.Auth.Common.LinkSource\AccountStore\AccountResult.cs">
+            <Link>AccountStore\AccountResult.cs</Link>
+        </Compile>
+        <Compile Include="..\Xamarin.Auth.Portable\AccountStore\AccountStore.Portable.cs">
+            <Link>AccountStore\AccountStore.Portable.cs</Link>
+        </Compile>
+        <Compile Include="..\Xamarin.Auth.Common.LinkSource\AccountStore\AccountStore.Async.cs">
+            <Link>AccountStore\AccountStore.Async.cs</Link>
+            <DependentUpon>AccountStore\AccountStore.cs</DependentUpon>
+        </Compile>
+        <Compile Include="..\Xamarin.Auth.Common.LinkSource\AccountStore\AccountStore.cs">
+            <Link>AccountStore\AccountStore.cs</Link>
+        </Compile>
+        <Compile Include="..\Xamarin.Auth.Common.LinkSource\AccountStore\AccountStoreException.cs">
+            <Link>AccountStore\AccountStoreException.cs</Link>
+        </Compile>
+        <Compile Include="..\Xamarin.Auth.Common.LinkSource\AuthException.cs">
+            <Link>AuthException.cs</Link>
+        </Compile>
+        <Compile Include="..\Xamarin.Auth.Common.LinkSource\LibraryUtilities.cs">
+            <Link>LibraryUtilities.cs</Link>
+        </Compile>
+    </ItemGroup>
+</Project>

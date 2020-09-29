@@ -7,6 +7,7 @@
     + PCL Profile259
     + Xamarin.Android
     + Xamarin.iOS
+- Xamarin.AuthX 1.7.0 is equivalent to Xamarin.Auth 1.7.0 (https://github.com/xamarin/Xamarin.Auth/tree/1.7.0.0)
 
 ## Install Nuget package
 - https://www.nuget.org/packages/Xamarin.AuthX

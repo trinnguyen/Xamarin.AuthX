@@ -67,7 +67,6 @@ namespace Xamarin.AuthX._MobileServices
         /// </summary>
         /// <returns>Created AccountStore</returns>
         /// <param name="password">Password used for the Store (Android, ignored on other platforms</param>
-        [Obsolete("Use Xamarin.Essentials SecureStorage instead: https://aka.ms/xamarin-auth-accountstore-migration-guide")]
         public static AccountStore Create(global::Android.Content.Context context, string password)
         {
             return new AndroidAccountStore(context, password);
@@ -96,7 +95,6 @@ namespace Xamarin.AuthX._MobileServices
         /// </summary>
         /// <returns>Created AccountStore</returns>
         /// <param name="password">Password used for the Store (Android, ignored on other platforms</param>
-        [Obsolete("Use Xamarin.Essentials SecureStorage instead: https://aka.ms/xamarin-auth-accountstore-migration-guide")]
         public static AccountStore Create(string password)
         {
             return Create(global::Android.App.Application.Context, password);

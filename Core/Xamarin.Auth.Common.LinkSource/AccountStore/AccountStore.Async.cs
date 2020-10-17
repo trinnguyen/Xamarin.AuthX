@@ -43,7 +43,6 @@ namespace Xamarin.AuthX._MobileServices
         /// <param name='serviceId'>
         /// Service identifier.
         /// </param>
-        [Obsolete("Use Xamarin.Essentials SecureStorage instead: https://aka.ms/xamarin-auth-accountstore-migration-guide")]
         public abstract Task<List<Account>> FindAccountsForServiceAsync(string serviceId);
 
         /// <summary>
@@ -56,7 +55,6 @@ namespace Xamarin.AuthX._MobileServices
         /// <param name='serviceId'>
         /// Service identifier.
         /// </param>
-        [Obsolete("Use Xamarin.Essentials SecureStorage instead: https://aka.ms/xamarin-auth-accountstore-migration-guide")]
         public abstract Task SaveAsync(Account account, string serviceId);
 
         /// <summary>
@@ -68,7 +66,6 @@ namespace Xamarin.AuthX._MobileServices
         /// <param name='serviceId'>
         /// Service identifier.
         /// </param>
-        [Obsolete("Use Xamarin.Essentials SecureStorage instead: https://aka.ms/xamarin-auth-accountstore-migration-guide")]
         public abstract Task DeleteAsync(Account account, string serviceId);
     }
 }

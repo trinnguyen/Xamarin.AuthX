@@ -35,7 +35,6 @@ namespace Xamarin.AuthX
         /// <summary>
         /// Create an account store.
         /// </summary>
-        [Obsolete("Use Xamarin.Essentials SecureStorage instead: https://aka.ms/xamarin-auth-accountstore-migration-guide")]
         public static AccountStore Create()
         {
             return new KeyChainAccountStore();
@@ -49,7 +48,6 @@ namespace Xamarin.AuthX
         /// </summary>
         /// <returns>Created AccountStore</returns>
         /// <param name="password">Password used for the Store (Android, ignored on other platforms</param>
-        [Obsolete("Use Xamarin.Essentials SecureStorage instead: https://aka.ms/xamarin-auth-accountstore-migration-guide")]
         public static AccountStore Create(string password)
         {
             return new KeyChainAccountStore();

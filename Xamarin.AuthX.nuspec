@@ -5,7 +5,7 @@
         <title>Xamarin.AuthX</title>
 		<authors>Tri Nguyen</authors>
 		<owners>Tri Nguyen</owners>
-		<version>1.7.0.0-beta</version>
+		<version>1.7.0.0</version>
 		<releaseNotes>
             - Extract AccountStore from Xamarin.Auth
             - Drop-in replacement for Xamarin.Auth package that uses AccountStore only

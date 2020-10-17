@@ -42,4 +42,4 @@ IEnumerable<Account> accounts  = store.FindAccountsForService("YOUR_SERVICE_ID")
     + Xamarin.iOS: https://github.com/trinnguyen/TnnCrypto.EncryptedUserDefaults
 
 ## Credits
-- This project is partially clone from [Xamarin.Auth](https://github.com/xamarin/Xamarin.Auth) for AccountStore component with some modifications
+- This project is partially cloned from [Xamarin.Auth](https://github.com/xamarin/Xamarin.Auth) for AccountStore component with some modifications
